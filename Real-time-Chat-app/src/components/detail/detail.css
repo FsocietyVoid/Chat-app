@@ -1,0 +1,110 @@
+.detail {
+    flex: 1;
+    
+
+    .user{
+        padding: 12px 18px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        border-bottom: 1px solid #dddddd35;
+
+        img{
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    }
+
+    .info{
+        display: flex;
+        padding: 20px;
+        flex-direction: column;
+        gap: 12px;
+
+        .option{
+
+            .title{
+                display: flex;
+                align-items: center;
+                justify-content: space-between; 
+                
+                img{
+                    width: 30px;
+                    height: 30px;
+                    background-color: rgba(17, 25, 40, 0.3);
+                    border-radius: 50%;
+                    padding: 10px;
+                    cursor: pointer;
+                }
+            }
+
+            .photos{
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+                margin-top: 18px;
+
+                .photoItems{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+
+
+                    .photoDetail{
+                        display: flex;
+                        align-items: center;
+                        gap: 20px;
+                        
+
+                        img{
+                            width: 40px;
+                            height: 40px;
+                            object-fit: cover;
+                            border-radius: 5px;
+                        }
+
+                        span{
+                            font-size: 14px;
+                            font-weight: 300;
+                            color: lightgray;
+                        }
+                    }
+
+                    .icon{
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 37%;
+                        padding: 8px;
+                        background-color: rgba(17, 25, 40, 0.3);
+                        cursor: pointer;
+                    }
+                }
+
+            }  
+            
+            button{
+                padding: 10px;
+                border-radius: 5px;
+                border: none;
+                color: white;
+                cursor: pointer;
+                background-color: rgba(230, 74, 105, 0.553);
+
+                &:hover{
+                    background-color: rgba(220, 20, 60, 0.796);
+                }
+
+                &.logout{
+                    padding: 8px;
+                    background-color: #1a73e8;
+                }
+            }
+
+        }
+
+    }
+}
